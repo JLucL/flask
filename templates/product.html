@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <a href="{{ url_for('home') }}">← Back to list</a>
+
+  <h1>{{ product.id }}</h1>
+  <h2>{{ product.name }}</h2>
+  <h2>{{ product.text }}</h2>
+
+  <!-- What other columns do you have in the `products` table? Use them here! -->
+{% endblock %}
